@@ -21,6 +21,14 @@ namespace Line_Comparison
                 Console.WriteLine("Lines are equal");
             else
                 Console.WriteLine("Lines are not equal");
+
+            int a = length_One.CompareTo(length_two);
+            if (a == 0)
+                Console.WriteLine("Both Lines are equal");
+            else if (a > 0)
+                Console.WriteLine("Line one is greater");
+            else
+                Console.WriteLine("Line two is greater");
             Console.ReadKey();
         }
     }
